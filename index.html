@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="./styles/reset.css" />
+	<link rel="stylesheet" type="text/css" href="./styles/index.css" />
+	<title>Desafio 01 Alura-Escriptador José Araujo</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="body">
+		<header>Juego del ahorcado</header>
+		<div class="principal">
+			<div class="principal-izquierdo">
+				<img src="./images/Logo@2x.svg" />
+			</div>
+			<div class="principal-centro">
+				<form class="principal-centroF">
+					<section id="Horca" name="mensajeO">
+
+						<div style="display: none" class="horcaymensaje"><img src="./images/Horca001.png" id="img-horca" />
+							<p class="mensaje"></p>
+						</div>
+						<div class="default" border="1">
+							<div class="lista"> </div>
+						</div>
+						<br>
+						<div style="display: none" class="tablaletras">
+							<div class="listaLetras"> </div>
+						</div>
+						<h2 class="letrasFalladas hide">Letras erradas</h2>
+						<div class="default" border="1">
+							<div class="listaFalladas">
+								<div class="conborde hide">A</div>
+							</div>
+						</div>
+						<br>
+						<div>
+
+							<section class="botones-centrales">
+								<button class="accion-1" type="submit">Iniciar juego</button>
+								<button class="accion-2" type="submit">Agregar nueva palabra</button>
+							</section>
+						</div>
+					</section>
+
+
+				</form>
+			</div>
+
+			<div class="principal-derecho">
+				<form class="principal-deFI">
+					<div class="invisible" id="mensaje-encriptado"></div>
+					<button class="invisibleB" id="accion-3" type="submit" name="copiar">Copiar</button>
+					<div class="muneco">
+						<form>
+							<p class="ayudaT">Alura instructores</p>
+							<div class="radioButton">
+
+								<img src="./images/alura.png" id="img-01" class="img-categoria" />
+								<input type="radio" name="categoriaj" value="aluraInst" checked onclick="categoria='aluraInst'">
+							</div>
+							<div class="radioButton">
+
+								<img src="./images/deportes.png" id="img-02" class="img-categoria" />
+								<input type="radio" name="categoriaj" value="deportes" onclick="categoria='deportes'">
+							</div>
+							<div class="radioButton">
+
+								<img src="./images/lenguajes.png" id="img-03" class="img-categoria" />
+								<input type="radio" name="categoriaj" value="lenguajes" onclick="categoria='lenguajes'">
+							</div>
+							<div class="radioButton">
+
+								<img src="./images/paises.png" id="img-04" class="img-categoria" />
+								<input type="radio" name="categoriaj" value="paises" onclick="categoria='paises'">
+							</div>
+							<div class="radioButton">
+
+								<img src="./images/peliculas.png" id="img-05" class="img-categoria" />
+								<input type="radio" name="categoriaj" value="peliculas" onclick="categoria='peliculas'">
+							</div>
+							<div class="radioButton">
+
+								<img src="./images/todas.png" id="img-06" class="img-categoria" />
+								<input type="radio" name="categoriaj" value="todas" onclick="categoria='todas'">
+							</div>
+
+
+
+							<h2 id="ningun">Seleccione una categoría</h2>
+						</form>
+
+					</div>
+				</form>
+			</div>
+
+		</div>
+		<br>
+		<footer>
+			<p>&copy José L. Araujo B. - 2022</p>
+			<P>
+				<=======>
+			</P>
+			<a href="mailto:arabarre52@gmail.com">arabarre52@gmail.com</a>
+		</footer>
+</body>
+<script src="./scripts/inicio.js"></script>
+<script src="./scripts/letras.js"></script>
+<script src="./scripts/resolver.js"></script>
+<script src="./scripts/letrapulsada.js"></script>
+
+</html>
